@@ -5,7 +5,10 @@ matrix:
       dist: xenial
       sudo: true
 install:
-  - pip install -q -q -e .[dev,test]
+  - pip install -q -e .[dev,test]
 script:
   - python setup.py test
+
+# Push the results back to codecov
+after_success:
   - codecov
