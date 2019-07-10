@@ -1,8 +1,8 @@
 # TfPyTh
 
-Putting TensorFlow back in PyTorch, back in Tensorflow (differentiable TensorFlow PyTorch adapters).
+Putting TensorFlow back in PyTorch, back in TensorFlow (differentiable TensorFlow PyTorch adapters).
 
-> A light-weight adapter library to make things interact that were not supposed to interact initially.
+> A light-weight differentiable adapter library to make TensorFlow and PyTorch interact.
 
 ## Install
 
@@ -40,7 +40,7 @@ x.backward()
 assert np.allclose((a.grad, b.grad), (3., 24.))
 ```
 
-## What it haz
+## What it's got
 
 ### `torch_from_tensorflow`
 
@@ -54,7 +54,7 @@ Creates an eager Tensorflow function from a PyTorch function.
 
 Creates a TensorFlow op/tensor from a PyTorch function.
 
-## TODOs
+## Future work
 
-* [] support JAX
-* [] support higher-order derivatives
+- [ ] support JAX
+- [ ] support higher-order derivatives
