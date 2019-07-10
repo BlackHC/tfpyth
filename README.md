@@ -2,9 +2,15 @@
 
 [![Build Status](https://travis-ci.com/BlackHC/tfpyth.svg?branch=master)](https://travis-ci.com/BlackHC/tfpyth) [![codecov](https://codecov.io/gh/BlackHC/tfpyth/branch/master/graph/badge.svg)](https://codecov.io/gh/BlackHC/tfpyth)
 
-Putting TensorFlow back in PyTorch, back in TensorFlow (differentiable TensorFlow PyTorch adapters).
+> Putting TensorFlow back in PyTorch, back in TensorFlow (with differentiable TensorFlow PyTorch adapters).
 
-> A light-weight differentiable adapter library to make TensorFlow and PyTorch interact.
+Do you have a codebase that uses TensorFlow and one that uses PyTorch and want to train a model that uses both end-to-end?
+
+This library makes it possible without having to rewrite either codebase! 
+
+It allows you to wrap a TensorFlow graph to make it callable (and differentiable) through PyTorch, and vice-versa, using simple functions.
+
+The only caveat is that tensors have to be copied and routed through the CPU until TensorFlow supports `__cuda_array_interface` (please star the [GitHub issue](https://github.com/tensorflow/tensorflow/issues/29039)).
 
 ## Install
 
