@@ -1,0 +1,5 @@
+[run]
+source=tfpyth/*
+omit=
+    */tests/*
+    setup.py

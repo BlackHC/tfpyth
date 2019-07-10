@@ -54,8 +54,9 @@ def torch_from_tensorflow(tf_session, tf_inputs, tf_output, tf_dtype=tf.float32)
             th_output = th.as_tensor(output)
             return th_output
 
+        # See https://www.janfreyberg.com/blog/2019-04-01-testing-pytorch-functions/ for why "no cover"
         @staticmethod
-        def backward(ctx, grad_output):
+        def backward(ctx, grad_output): # pragma: no cover
             th_inputs = ctx.saved_tensors
 
             feed_dict = {}
