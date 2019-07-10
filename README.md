@@ -1,5 +1,7 @@
 # TfPyTh
 
+[![Build Status](https://travis-ci.com/BlackHC/tfpyth.svg?branch=master)](https://travis-ci.com/BlackHC/tfpyth) [![codecov](https://codecov.io/gh/BlackHC/tfpyth/branch/master/graph/badge.svg)](https://codecov.io/gh/BlackHC/tfpyth)
+
 Putting TensorFlow back in PyTorch, back in TensorFlow (differentiable TensorFlow PyTorch adapters).
 
 > A light-weight differentiable adapter library to make TensorFlow and PyTorch interact.
