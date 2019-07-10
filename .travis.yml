@@ -2,6 +2,6 @@ language: python
 python:
   - 3.6
 install:
-  - pip install -q -q --progress-bar off -e .[dev,test]
+  - pip install -q -q -e .[dev,test]
 script:
   - python setup.py test
